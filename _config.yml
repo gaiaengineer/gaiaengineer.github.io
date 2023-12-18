@@ -1,11 +1,11 @@
 title: Olga Alexeeva
-logo: /assets/img/bw_contrast.png
+logo: /assets/img/bw_round_no_background.png
 description: > # your text below (remove <br> elements if you don't need line breaks)
   First description 
   <br><br>
   Second description 
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/gaiaengineer">View My LinkedIn Profile</a> 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
