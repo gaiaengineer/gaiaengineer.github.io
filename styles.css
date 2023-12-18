@@ -1,20 +1,6 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-/* Responsiveness */
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .left-column,
-    .right-column {
-        padding: 0;
-        min-width: auto; /* Reset minimum width for smaller screens */
-    }
-}
-
 /* Columns */
 
 .container {
@@ -27,13 +13,13 @@
 
 .left-column {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 50px;
     min-width: 350px; /* Set a minimum width */
 }
 
 .right-column {
     flex: 2;
-    min-width: 800px; /* Set a minimum width */
+    min-width: 700px; /* Set a minimum width */
 }
 
 /* Social Links */
@@ -144,7 +130,28 @@ h6 {
     margin-right: 8px;
 }
 
+/* Skill Columns */
 
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    max-width: 30%; /* You can adjust the max-width based on your design preference */
+}
+
+/* Add Media Queries for Responsive Design */
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media only screen and (max-width: 767px) {
+    .column {
+        max-width: 100%;
+    }
+}
+
+/* Skills */
 
 a {
     color: var(--main-color);
@@ -154,7 +161,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -320,3 +327,57 @@ footer {
     li {
         margin-bottom: 8px;
     }
+
+    /* Highlight */
+
+    .highlight {
+        background-color: rgba(255, 0, 0, 0.2); /* Adjust the transparency as needed */
+        display: inline;
+        padding: 0 2px; 
+        margin: 0 2px; 
+    }
+
+    /* Add Media Queries for Responsive Design */
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-column,
+    .right-column {
+        min-width: auto;
+        padding: 0;
+    }
+
+    .social-links {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .profile img {
+        margin-top: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .timeline-list,
+    .certificates-list,
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 20px;
+    }
+}
+}
+
