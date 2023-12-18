@@ -32,8 +32,8 @@
 }
 
 .right-column {
-    flex: 1;
-    min-width: 700px; /* Set a minimum width */
+    flex: 2;
+    min-width: 800px; /* Set a minimum width */
 }
 
 /* Social Links */
