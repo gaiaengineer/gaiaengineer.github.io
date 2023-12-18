@@ -15,14 +15,19 @@
 
 
 ## Education				       		
-M.S., Information Technologies	| National Research Nuclear University MEPhI (Moscow Engineering Physics Institute) (_July 2016_)	 			        		
+M.S., Information Technologies	| National Research Nuclear University MEPhI (Moscow Engineering Physics Institute) (_July 2016_)	
+
 Specialist, Automated systems of management and documentary service | Russian State University for the Humanities (_June 2009_)
 
 ## Certifications
 Mathematics for Machine Learning: Linear Algebra | Imperial College London (_October 2023_)	
+
 AI for Good | DeepLearning.AI (_September 2023_)	
+
 ChatGPT Prompt Engineering for Developers | DeepLearning.AI (_September 2023_)	
+
 Product Strategy Micro-Certification | Product School (_September 2023_)	
+
 Certified Agile Professional | ICAgile (_December 2013_)	
 
 ## Work Experience
