@@ -52,7 +52,6 @@
 /* Styles */
 
 :root {
-    --width: 720px;
     --font-main: 'Roboto Mono', monospace;
     --font-secondary: 'Roboto Mono', monospace;
     --font-scale: .9em;
@@ -343,6 +342,10 @@ footer {
     .container {
         flex-direction: column;
         padding: 20px;
+    }
+
+    header {
+        --font-size: 15px;
     }
 
     .left-column,
