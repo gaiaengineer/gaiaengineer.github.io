@@ -5,8 +5,8 @@
 #### IDE & Version Control: Git, Visual Studio, Visual Studio Code
 #### Exploratory Data Analysis: Jupyter Notebook, Google Sheets, Google Analytics, Google Tag Manager, Tableau, Amplitude, Looker, MixPanel
 #### Notable Product Competencies: Complete Product Lifecycle, Managing Requirements, Hypothesis Testing & Validation, Customer Interviews, Personas, Roadmapping, Customer Journey Maps, Data Analysis & Visualization, Design & UX Principles, Market Research, Metrics 
-### Product Frameworks: JTBD, MVP, North Star Metric, Weighted Impact Scoring, RICE Prioritization, Design Sprint, Kano Model, GIST Planning, Double Diamond, SCAMPER, Thinkertoys, DACI, CIRCLES, Hooked Method
-### Notable Leadership Skills: Cross-functional Team Leadership, Non-violent Communication, Mentoring, Strategic Hiring
+#### Product Frameworks: JTBD, MVP, North Star Metric, Weighted Impact Scoring, RICE Prioritization, Design Sprint, Kano Model, GIST Planning, Double Diamond, SCAMPER, Thinkertoys, DACI, CIRCLES, Hooked Method
+#### Notable Leadership Skills: Cross-functional Team Leadership, Non-violent Communication, Mentoring, Strategic Hiring
 
 ## Education				       		
 - M.S., Information Technologies	| National Research Nuclear University MEPhI (Moscow Engineering Physics Institute) (_July 2016_)	 			        		
