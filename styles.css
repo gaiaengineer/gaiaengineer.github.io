@@ -1,4 +1,22 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 0;
+        min-width: auto; /* Reset minimum width for smaller screens */
+    }
+}
+
+/* Columns */
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -15,20 +33,10 @@
 
 .right-column {
     flex: 1;
+    min-width: 700px; /* Set a minimum width */
 }
 
-/* Additional styles for responsiveness */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .left-column,
-    .right-column {
-        padding: 0;
-        min-width: auto; /* Reset minimum width for smaller screens */
-    }
-}
+/* Social Links */
 
 .social-links {
     display: flex;
@@ -56,16 +64,7 @@
     margin-top: 5px;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .left-column,
-    .right-column {
-        padding: 0;
-    }
-}
+/* Styles */
 
 :root {
     --width: 720px;
@@ -97,6 +96,8 @@ body {
     color: var(--text-color);
 }
 
+/* Navigation */
+
 nav {
     margin-bottom: 20px;
     display: flex;
@@ -113,12 +114,15 @@ nav a {
     text-decoration: none;
     border-bottom: 1px solid #dfe2e5;
     transition: color 0.3s;
+    margin-right: 8px
 }
 
 nav a:hover {
     color: var(--main-color);
     background-color: #f2f2f2;
 }
+
+/* Headers */
 
 h1,
 h2,
@@ -130,6 +134,8 @@ h6 {
     color: var(--heading-color);
 }
 
+/* Badges */
+
 .badge {
     background-color: var(--main-color);
     color: white;
@@ -137,6 +143,8 @@ h6 {
     border-radius: 4px;
     margin-right: 8px;
 }
+
+
 
 a {
     color: var(--main-color);
@@ -149,6 +157,8 @@ a:hover {
     color: white;
     text-decoration: none;
 }
+
+/* Blinking cursor for the title of the website */
 
 header {
     margin-bottom: 10px;
@@ -172,10 +182,6 @@ h1::after {
 .title h1 {
     font-size: 1.5em;
     display: inline;
-}
-
-nav a {
-    margin-right: 8px;
 }
 
 strong,
@@ -249,19 +255,8 @@ footer {
     margin-block-end: 1em;
     overflow-x: auto;
 }
-    
-    /* Additional styles for responsiveness */
-    @media (max-width: 768px) {
-        .columns {
-            flex-direction: column;
-        }
-    
-        .column {
-            padding: 0;
-            margin-bottom: 20px;
-        }
-    }
 
+/* Certifications */
 
     #certifications {
         text-align: left;
@@ -283,6 +278,8 @@ footer {
     .certificate-entry:last-child {
         border-bottom: none;
     }
+
+/* Timeline */
 
     #timeline {
         text-align: left;
