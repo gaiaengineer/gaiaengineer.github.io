@@ -17,7 +17,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Geist:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
 </head>
 <body>
 <style>
@@ -239,6 +239,48 @@
   }
   @media (min-width: 721px) and (max-width: 960px) {
     .kit { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  /* mono labels and stitched lines */
+  :root {
+    --mono: 'Geist Mono', ui-monospace, Menlo, monospace;
+    --dash: color-mix(in srgb, var(--ink-soft) 48%, transparent);
+    --st-h: repeating-linear-gradient(90deg, var(--dash) 0 8px, transparent 8px 14px);
+    --st-v: repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 14px);
+  }
+  :lang(ja) { --mono: var(--body); }
+  .band {
+    --dash: color-mix(in srgb, var(--band-soft) 70%, transparent);
+    --st-h: repeating-linear-gradient(90deg, var(--dash) 0 8px, transparent 8px 14px);
+    --st-v: repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 14px);
+  }
+  .label, .nav-name, .nav-links, .more summary, .slim dt, .rc-num { font-family: var(--mono); letter-spacing: 0.07em; font-size: 0.78rem; }
+  .years, .tag, .copy, .site-footer, .lang-btn, .rules h3::before { font-family: var(--mono); }
+  .tag { font-size: 0.75rem; }
+  .years { text-transform: uppercase; letter-spacing: 0.07em; font-size: 0.78rem; color: var(--label); padding-top: 0.6rem; white-space: nowrap; }
+  html:lang(ja) .years { text-transform: none; letter-spacing: 0.06em; }
+  .facts { border-block: 1px solid; border-image: var(--st-h) 1; }
+  .fact + .fact { border-left: 0; background: var(--st-v) 0 0 / 1px 100% no-repeat; }
+  .ledger, .slim, .tools-line, .contact, .site-footer { border-top: 1px solid; border-image: var(--st-h) 1; }
+  .role { border-bottom: 1px solid; border-image: var(--st-h) 1; }
+  .kit > div, .tools, .rc-slide {
+    border: 1px solid transparent; border-radius: 0; background-origin: border-box; background-repeat: no-repeat;
+    background-image: var(--st-h), var(--st-h), var(--st-v), var(--st-v);
+    background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+  }
+  .rc-track { border-radius: 0; }
+  .copy { border-radius: 2px; border-color: var(--dash); }
+  .copy, .copy:hover {
+    background-image: linear-gradient(var(--ink), var(--ink)), linear-gradient(var(--ink), var(--ink)), linear-gradient(var(--ink), var(--ink)), linear-gradient(var(--ink), var(--ink));
+    background-size: 4px 4px; background-repeat: no-repeat; background-position: 0 0, 100% 0, 0 100%, 100% 100%;
+  }
+  @media (min-width: 721px) { .role { grid-template-columns: 11.5rem minmax(0, 1fr); } }
+  @media (max-width: 720px) {
+    .years { padding-top: 0; }
+    .nav-name, .nav-links, html:lang(fr) .nav-name, html:lang(fr) .nav-links { letter-spacing: 0.02em; }
+    .fact:nth-child(n+3) { border-top: 0; }
+    .fact:nth-child(3) { background: var(--st-h) 0 0 / 100% 1px no-repeat; }
+    .fact:nth-child(4) { background: var(--st-v) 0 0 / 1px 100% no-repeat, var(--st-h) 0 0 / 100% 1px no-repeat; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
